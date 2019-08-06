@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UsersCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="UsersCategoryCollectionViewCell" customModule="Encuesta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14/07/2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10h-xs-Awa">
+                        <rect key="frame" x="188" y="26" width="59" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isabel Martinez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kda-dl-gLw">
+                        <rect key="frame" x="10" y="10" width="110" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-z2-rCk">
+                        <rect key="frame" x="10" y="74" width="237" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ana@yopmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-Om-nJM">
+                        <rect key="frame" x="10" y="28" width="102.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dni: 12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbK-Fp-cs6">
+                        <rect key="frame" x="169.5" y="12.5" width="77.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MbK-Fp-cs6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kda-dl-gLw" secondAttribute="trailing" constant="10" id="8rL-5u-Qks"/>
+                <constraint firstItem="kRc-z2-rCk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="CQr-mO-9rN"/>
+                <constraint firstAttribute="trailing" secondItem="MbK-Fp-cs6" secondAttribute="trailing" constant="10" id="GCG-tN-TcN"/>
+                <constraint firstItem="wbh-Om-nJM" firstAttribute="top" secondItem="kda-dl-gLw" secondAttribute="bottom" id="Nzs-PS-yVY"/>
+                <constraint firstItem="kRc-z2-rCk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wbh-Om-nJM" secondAttribute="bottom" constant="31.5" id="RVK-h3-lbI"/>
+                <constraint firstItem="kda-dl-gLw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eYG-oM-qEC"/>
+                <constraint firstAttribute="trailing" secondItem="kRc-z2-rCk" secondAttribute="trailing" constant="10" id="gh3-w8-WZY"/>
+                <constraint firstAttribute="bottom" secondItem="kRc-z2-rCk" secondAttribute="bottom" constant="10" id="gql-hv-G6J"/>
+                <constraint firstItem="10h-xs-Awa" firstAttribute="top" secondItem="MbK-Fp-cs6" secondAttribute="bottom" id="hof-Iu-0Cn"/>
+                <constraint firstItem="wbh-Om-nJM" firstAttribute="leading" secondItem="kda-dl-gLw" secondAttribute="leading" id="m36-fv-GhP"/>
+                <constraint firstItem="kda-dl-gLw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="sub-RF-DWx"/>
+                <constraint firstItem="MbK-Fp-cs6" firstAttribute="centerY" secondItem="kda-dl-gLw" secondAttribute="centerY" id="wOO-y8-9cM"/>
+                <constraint firstAttribute="trailing" secondItem="10h-xs-Awa" secondAttribute="trailing" constant="10" id="zvT-8K-2Uy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="239" height="121.5"/>
+            <connections>
+                <outlet property="lblDate" destination="10h-xs-Awa" id="kCh-Mg-ynk"/>
+                <outlet property="lblDni" destination="MbK-Fp-cs6" id="ln9-3M-lhQ"/>
+                <outlet property="lblEmail" destination="wbh-Om-nJM" id="VdL-GC-yO0"/>
+                <outlet property="lblName" destination="kda-dl-gLw" id="BOf-Qq-Tne"/>
+                <outlet property="lblWhy" destination="kRc-z2-rCk" id="Had-yX-X8a"/>
+            </connections>
+            <point key="canvasLocation" x="193" y="86"/>
+        </collectionViewCell>
+    </objects>
+</document>

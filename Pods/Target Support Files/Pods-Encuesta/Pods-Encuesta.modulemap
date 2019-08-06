@@ -1,0 +1,6 @@
+framework module Pods_Encuesta {
+  umbrella header "Pods-Encuesta-umbrella.h"
+
+  export *
+  module * { export * }
+}

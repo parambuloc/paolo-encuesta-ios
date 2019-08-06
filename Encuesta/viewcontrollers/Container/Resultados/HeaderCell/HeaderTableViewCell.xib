@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderTableViewCell" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="Encuesta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCq-wN-fmw">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="74.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_photo" translatesAutoresizingMaskIntoConstraints="NO" id="pdY-mT-FgO">
+                                <rect key="frame" x="15" y="15" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FYb-c9-dKj"/>
+                                    <constraint firstAttribute="width" constant="40" id="Ihk-eA-q3C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 encuestas asosciadas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnV-9y-oKm">
+                                <rect key="frame" x="65" y="38" width="249" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.76462173460000005" green="0.764754355" blue="0.76461333040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tecnología de la información" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-dx-TBG">
+                                <rect key="frame" x="65" y="17" width="249" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dnV-9y-oKm" firstAttribute="leading" secondItem="OfK-dx-TBG" secondAttribute="leading" id="Lrp-2j-4ix"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dnV-9y-oKm" secondAttribute="bottom" constant="10" id="N6y-Y4-JG8"/>
+                            <constraint firstAttribute="trailing" secondItem="OfK-dx-TBG" secondAttribute="trailing" constant="10" id="Oqm-4O-Phx"/>
+                            <constraint firstItem="pdY-mT-FgO" firstAttribute="leading" secondItem="TCq-wN-fmw" secondAttribute="leading" constant="15" id="Vao-zq-QtY"/>
+                            <constraint firstItem="dnV-9y-oKm" firstAttribute="top" secondItem="OfK-dx-TBG" secondAttribute="bottom" constant="3" id="YQM-BW-9WL"/>
+                            <constraint firstAttribute="trailing" secondItem="dnV-9y-oKm" secondAttribute="trailing" constant="10" id="cNU-pu-epc"/>
+                            <constraint firstItem="pdY-mT-FgO" firstAttribute="top" secondItem="TCq-wN-fmw" secondAttribute="top" constant="15" id="lvV-oM-IvC"/>
+                            <constraint firstItem="OfK-dx-TBG" firstAttribute="leading" secondItem="pdY-mT-FgO" secondAttribute="trailing" constant="10" id="nDq-YJ-7SH"/>
+                            <constraint firstItem="OfK-dx-TBG" firstAttribute="top" secondItem="TCq-wN-fmw" secondAttribute="top" constant="17" id="yLN-4G-ZhW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TCq-wN-fmw" secondAttribute="bottom" id="Dcv-IF-U6a"/>
+                    <constraint firstItem="TCq-wN-fmw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h5G-KP-q0j"/>
+                    <constraint firstItem="TCq-wN-fmw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vr8-cE-R5u"/>
+                    <constraint firstAttribute="trailing" secondItem="TCq-wN-fmw" secondAttribute="trailing" id="xnW-9g-GRg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCategory" destination="pdY-mT-FgO" id="3kE-Jl-gTl"/>
+                <outlet property="lblNameCategory" destination="OfK-dx-TBG" id="w93-R8-2kJ"/>
+                <outlet property="lblTotalEncuestas" destination="dnV-9y-oKm" id="M4x-Ob-cpH"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="65.959821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_photo" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B4D2550A9F299029C737D4 /* Pods_Encuesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A259788063340D7B54307F3 /* Pods_Encuesta.framework */; };
+		9B0D84E022F8D16300E17333 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D84DE22F8D16300E17333 /* ButtonTableViewCell.swift */; };
+		9B0D84E122F8D16300E17333 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D84DF22F8D16300E17333 /* ButtonTableViewCell.xib */; };
+		9B0D84E422F8D5EE00E17333 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D84E222F8D5EE00E17333 /* DataTableViewCell.swift */; };
+		9B0D84E522F8D5EE00E17333 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D84E322F8D5EE00E17333 /* DataTableViewCell.xib */; };
+		9B2DFB0F22F3C1E700D3713B /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2DFB0E22F3C1E700D3713B /* PerfilViewController.swift */; };
+		9B2DFB1122F3CA4700D3713B /* ResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2DFB1022F3CA4700D3713B /* ResultadosViewController.swift */; };
+		9B4A900B22F94C9200B05E9E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A900A22F94C9200B05E9E /* BaseViewController.swift */; };
+		9BD4F2E022F391250078B43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4F2DF22F391250078B43B /* AppDelegate.swift */; };
+		9BD4F2E522F391250078B43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD4F2E322F391250078B43B /* Main.storyboard */; };
+		9BD4F2E822F391250078B43B /* Encuesta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4F2E622F391250078B43B /* Encuesta.xcdatamodeld */; };
+		9BD4F2EA22F3912B0078B43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD4F2E922F3912B0078B43B /* Assets.xcassets */; };
+		9BD4F2ED22F3912B0078B43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD4F2EB22F3912B0078B43B /* LaunchScreen.storyboard */; };
+		9BD4F2F822F39D5D0078B43B /* RealizarEncuestaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4F2F722F39D5D0078B43B /* RealizarEncuestaViewController.swift */; };
+		9BD4F2FD22F3A6170078B43B /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4F2FC22F3A6170078B43B /* Categoria.swift */; };
+		9BDB53FD22F78D8D0000A971 /* ResultadosContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB53FC22F78D8D0000A971 /* ResultadosContainerViewController.swift */; };
+		9BDFF1A822F6AF5A00F6F962 /* EncuestaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFF1A722F6AF5A00F6F962 /* EncuestaModel.swift */; };
+		9BDFF1AC22F6B16400F6F962 /* EncuestaSQLUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFF1AB22F6B16400F6F962 /* EncuestaSQLUseCase.swift */; };
+		9BDFF1AE22F6B1A100F6F962 /* EncuestaEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFF1AD22F6B1A100F6F962 /* EncuestaEntityManager.swift */; };
+		9BDFF1B022F6BD8100F6F962 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFF1AF22F6BD8100F6F962 /* HeaderModel.swift */; };
+		9BE204EC22F4E95F00E6C1D6 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE204EA22F4E95F00E6C1D6 /* HeaderTableViewCell.swift */; };
+		9BE204ED22F4E95F00E6C1D6 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE204EB22F4E95F00E6C1D6 /* HeaderTableViewCell.xib */; };
+		9BE204F522F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE204F322F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.swift */; };
+		9BE204F622F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE204F422F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.xib */; };
+		9BE7FE5B22F4180B0014C3E0 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE7FE5922F4180A0014C3E0 /* MyCell.xib */; };
+		9BE7FE5C22F4180B0014C3E0 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE5A22F4180A0014C3E0 /* MyCell.swift */; };
+		9BE7FE6022F4372E0014C3E0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE5F22F4372E0014C3E0 /* File.swift */; };
+		9BE7FE6322F44DFD0014C3E0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE6222F44DFD0014C3E0 /* Util.swift */; };
+		9BE7FE6A22F453AF0014C3E0 /* LoginPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE6922F453AF0014C3E0 /* LoginPerfilViewController.swift */; };
+		9BE7FE6C22F453D10014C3E0 /* LoginResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE6B22F453D10014C3E0 /* LoginResultadoViewController.swift */; };
+		9BE7FE6F22F45D2E0014C3E0 /* UserEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE6E22F45D2E0014C3E0 /* UserEntityManager.swift */; };
+		9BE7FE7122F463190014C3E0 /* UserSQLUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7FE7022F463190014C3E0 /* UserSQLUseCase.swift */; };
+		9BEA7F7022F4ADE5001338AD /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA7F6F22F4ADE5001338AD /* LogoutViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A259788063340D7B54307F3 /* Pods_Encuesta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Encuesta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6B4710975D9CF6D0D30C2C /* Pods-Encuesta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encuesta.release.xcconfig"; path = "Target Support Files/Pods-Encuesta/Pods-Encuesta.release.xcconfig"; sourceTree = "<group>"; };
+		8D6B9EA552558101C850B5F4 /* Pods-Encuesta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encuesta.debug.xcconfig"; path = "Target Support Files/Pods-Encuesta/Pods-Encuesta.debug.xcconfig"; sourceTree = "<group>"; };
+		9B0D84DE22F8D16300E17333 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		9B0D84DF22F8D16300E17333 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		9B0D84E222F8D5EE00E17333 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		9B0D84E322F8D5EE00E17333 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		9B2DFB0E22F3C1E700D3713B /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		9B2DFB1022F3CA4700D3713B /* ResultadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosViewController.swift; sourceTree = "<group>"; };
+		9B4A900A22F94C9200B05E9E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9BD4F2DC22F391250078B43B /* Encuesta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encuesta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD4F2DF22F391250078B43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BD4F2E422F391250078B43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BD4F2E722F391250078B43B /* Encuesta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Encuesta.xcdatamodel; sourceTree = "<group>"; };
+		9BD4F2E922F3912B0078B43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BD4F2EC22F3912B0078B43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BD4F2EE22F3912B0078B43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD4F2F722F39D5D0078B43B /* RealizarEncuestaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealizarEncuestaViewController.swift; sourceTree = "<group>"; };
+		9BD4F2FC22F3A6170078B43B /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		9BDB53FC22F78D8D0000A971 /* ResultadosContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosContainerViewController.swift; sourceTree = "<group>"; };
+		9BDFF1A722F6AF5A00F6F962 /* EncuestaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuestaModel.swift; sourceTree = "<group>"; };
+		9BDFF1AB22F6B16400F6F962 /* EncuestaSQLUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuestaSQLUseCase.swift; sourceTree = "<group>"; };
+		9BDFF1AD22F6B1A100F6F962 /* EncuestaEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuestaEntityManager.swift; sourceTree = "<group>"; };
+		9BDFF1AF22F6BD8100F6F962 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		9BE204EA22F4E95F00E6C1D6 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		9BE204EB22F4E95F00E6C1D6 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		9BE204F322F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BE204F422F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BE7FE5922F4180A0014C3E0 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		9BE7FE5A22F4180A0014C3E0 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		9BE7FE5F22F4372E0014C3E0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		9BE7FE6222F44DFD0014C3E0 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		9BE7FE6922F453AF0014C3E0 /* LoginPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPerfilViewController.swift; sourceTree = "<group>"; };
+		9BE7FE6B22F453D10014C3E0 /* LoginResultadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResultadoViewController.swift; sourceTree = "<group>"; };
+		9BE7FE6E22F45D2E0014C3E0 /* UserEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityManager.swift; sourceTree = "<group>"; };
+		9BE7FE7022F463190014C3E0 /* UserSQLUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSQLUseCase.swift; sourceTree = "<group>"; };
+		9BEA7F6F22F4ADE5001338AD /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BD4F2D922F391240078B43B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B4D2550A9F299029C737D4 /* Pods_Encuesta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A23C3840D9080C565745C89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B9EA552558101C850B5F4 /* Pods-Encuesta.debug.xcconfig */,
+				3F6B4710975D9CF6D0D30C2C /* Pods-Encuesta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B0D84D822F8C30100E17333 /* Names */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D84E222F8D5EE00E17333 /* DataTableViewCell.swift */,
+				9B0D84E322F8D5EE00E17333 /* DataTableViewCell.xib */,
+			);
+			path = Names;
+			sourceTree = "<group>";
+		};
+		9B0D84DD22F8D14F00E17333 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D84DE22F8D16300E17333 /* ButtonTableViewCell.swift */,
+				9B0D84DF22F8D16300E17333 /* ButtonTableViewCell.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		9BD4F2D322F391240078B43B = {
+			isa = PBXGroup;
+			children = (
+				9BD4F2DE22F391250078B43B /* Encuesta */,
+				9BD4F2DD22F391250078B43B /* Products */,
+				4A23C3840D9080C565745C89 /* Pods */,
+				A9F12EAA607A286C8BCF26AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD4F2DD22F391250078B43B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4F2DC22F391250078B43B /* Encuesta.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BD4F2DE22F391250078B43B /* Encuesta */ = {
+			isa = PBXGroup;
+			children = (
+				9BDFF1A622F6AF3C00F6F962 /* Model */,
+				9BE7FE6D22F45D010014C3E0 /* CoreData */,
+				9BE7FE6122F44DED0014C3E0 /* Util */,
+				9BE7FE5E22F4371E0014C3E0 /* Extensions */,
+				9BE7FE5822F417FB0014C3E0 /* DropDownCustom */,
+				9BD4F2F422F39C500078B43B /* viewcontrollers */,
+				9BD4F2DF22F391250078B43B /* AppDelegate.swift */,
+				9BD4F2E322F391250078B43B /* Main.storyboard */,
+				9BD4F2E922F3912B0078B43B /* Assets.xcassets */,
+				9BD4F2EB22F3912B0078B43B /* LaunchScreen.storyboard */,
+				9BD4F2EE22F3912B0078B43B /* Info.plist */,
+				9BD4F2E622F391250078B43B /* Encuesta.xcdatamodeld */,
+			);
+			path = Encuesta;
+			sourceTree = "<group>";
+		};
+		9BD4F2F422F39C500078B43B /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE6522F4535D0014C3E0 /* Main */,
+				9BE7FE6422F453560014C3E0 /* Container */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		9BDFF1A622F6AF3C00F6F962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4F2FC22F3A6170078B43B /* Categoria.swift */,
+				9BDFF1A722F6AF5A00F6F962 /* EncuestaModel.swift */,
+				9BDFF1AF22F6BD8100F6F962 /* HeaderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BDFF1A922F6B12D00F6F962 /* Encuesta */ = {
+			isa = PBXGroup;
+			children = (
+				9BDFF1AB22F6B16400F6F962 /* EncuestaSQLUseCase.swift */,
+				9BDFF1AD22F6B1A100F6F962 /* EncuestaEntityManager.swift */,
+			);
+			path = Encuesta;
+			sourceTree = "<group>";
+		};
+		9BDFF1AA22F6B13700F6F962 /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE6E22F45D2E0014C3E0 /* UserEntityManager.swift */,
+				9BE7FE7022F463190014C3E0 /* UserSQLUseCase.swift */,
+			);
+			path = Usuario;
+			sourceTree = "<group>";
+		};
+		9BE204E922F4E93500E6C1D6 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BE204EA22F4E95F00E6C1D6 /* HeaderTableViewCell.swift */,
+				9BE204EB22F4E95F00E6C1D6 /* HeaderTableViewCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		9BE204EE22F53F8600E6C1D6 /* EncuestaPorCategoriaCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BE204F322F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.swift */,
+				9BE204F422F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.xib */,
+			);
+			path = EncuestaPorCategoriaCell;
+			sourceTree = "<group>";
+		};
+		9BE7FE5822F417FB0014C3E0 /* DropDownCustom */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE5D22F41E090014C3E0 /* DrowDownCell */,
+			);
+			path = DropDownCustom;
+			sourceTree = "<group>";
+		};
+		9BE7FE5D22F41E090014C3E0 /* DrowDownCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE5A22F4180A0014C3E0 /* MyCell.swift */,
+				9BE7FE5922F4180A0014C3E0 /* MyCell.xib */,
+			);
+			path = DrowDownCell;
+			sourceTree = "<group>";
+		};
+		9BE7FE5E22F4371E0014C3E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE5F22F4372E0014C3E0 /* File.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9BE7FE6122F44DED0014C3E0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE6222F44DFD0014C3E0 /* Util.swift */,
+				9B4A900A22F94C9200B05E9E /* BaseViewController.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9BE7FE6422F453560014C3E0 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA7F7322F4D17A001338AD /* Resultados */,
+				9BE7FE6822F453840014C3E0 /* Login */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		9BE7FE6522F4535D0014C3E0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4F2F722F39D5D0078B43B /* RealizarEncuestaViewController.swift */,
+				9B2DFB0E22F3C1E700D3713B /* PerfilViewController.swift */,
+				9B2DFB1022F3CA4700D3713B /* ResultadosViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9BE7FE6822F453840014C3E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9BE7FE6922F453AF0014C3E0 /* LoginPerfilViewController.swift */,
+				9BE7FE6B22F453D10014C3E0 /* LoginResultadoViewController.swift */,
+				9BEA7F6F22F4ADE5001338AD /* LogoutViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9BE7FE6D22F45D010014C3E0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9BDFF1AA22F6B13700F6F962 /* Usuario */,
+				9BDFF1A922F6B12D00F6F962 /* Encuesta */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9BEA7F7322F4D17A001338AD /* Resultados */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D84DD22F8D14F00E17333 /* Button */,
+				9B0D84D822F8C30100E17333 /* Names */,
+				9BE204EE22F53F8600E6C1D6 /* EncuestaPorCategoriaCell */,
+				9BE204E922F4E93500E6C1D6 /* HeaderCell */,
+				9BDB53FC22F78D8D0000A971 /* ResultadosContainerViewController.swift */,
+			);
+			path = Resultados;
+			sourceTree = "<group>";
+		};
+		A9F12EAA607A286C8BCF26AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A259788063340D7B54307F3 /* Pods_Encuesta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BD4F2DB22F391240078B43B /* Encuesta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD4F2F122F3912B0078B43B /* Build configuration list for PBXNativeTarget "Encuesta" */;
+			buildPhases = (
+				FF61008DA907BFF9A4862BFC /* [CP] Check Pods Manifest.lock */,
+				9BD4F2D822F391240078B43B /* Sources */,
+				9BD4F2D922F391240078B43B /* Frameworks */,
+				9BD4F2DA22F391240078B43B /* Resources */,
+				5DF5673384B7A1384ECFD4AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Encuesta;
+			productName = Encuesta;
+			productReference = 9BD4F2DC22F391250078B43B /* Encuesta.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BD4F2D422F391240078B43B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Paolo Eduardo Arámbulo Calderon";
+				TargetAttributes = {
+					9BD4F2DB22F391240078B43B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9BD4F2D722F391240078B43B /* Build configuration list for PBXProject "Encuesta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BD4F2D322F391240078B43B;
+			productRefGroup = 9BD4F2DD22F391250078B43B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BD4F2DB22F391240078B43B /* Encuesta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BD4F2DA22F391240078B43B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD4F2ED22F3912B0078B43B /* LaunchScreen.storyboard in Resources */,
+				9B0D84E522F8D5EE00E17333 /* DataTableViewCell.xib in Resources */,
+				9BE7FE5B22F4180B0014C3E0 /* MyCell.xib in Resources */,
+				9BD4F2EA22F3912B0078B43B /* Assets.xcassets in Resources */,
+				9BE204F622F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.xib in Resources */,
+				9BE204ED22F4E95F00E6C1D6 /* HeaderTableViewCell.xib in Resources */,
+				9BD4F2E522F391250078B43B /* Main.storyboard in Resources */,
+				9B0D84E122F8D16300E17333 /* ButtonTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DF5673384B7A1384ECFD4AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Encuesta/Pods-Encuesta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Encuesta/Pods-Encuesta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF61008DA907BFF9A4862BFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Encuesta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BD4F2D822F391240078B43B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2DFB0F22F3C1E700D3713B /* PerfilViewController.swift in Sources */,
+				9BE7FE6F22F45D2E0014C3E0 /* UserEntityManager.swift in Sources */,
+				9BDFF1AC22F6B16400F6F962 /* EncuestaSQLUseCase.swift in Sources */,
+				9BE7FE6C22F453D10014C3E0 /* LoginResultadoViewController.swift in Sources */,
+				9BD4F2E022F391250078B43B /* AppDelegate.swift in Sources */,
+				9BDB53FD22F78D8D0000A971 /* ResultadosContainerViewController.swift in Sources */,
+				9BD4F2FD22F3A6170078B43B /* Categoria.swift in Sources */,
+				9BD4F2F822F39D5D0078B43B /* RealizarEncuestaViewController.swift in Sources */,
+				9BE7FE5C22F4180B0014C3E0 /* MyCell.swift in Sources */,
+				9B2DFB1122F3CA4700D3713B /* ResultadosViewController.swift in Sources */,
+				9BDFF1AE22F6B1A100F6F962 /* EncuestaEntityManager.swift in Sources */,
+				9BE7FE6322F44DFD0014C3E0 /* Util.swift in Sources */,
+				9BE7FE6A22F453AF0014C3E0 /* LoginPerfilViewController.swift in Sources */,
+				9BE7FE6022F4372E0014C3E0 /* File.swift in Sources */,
+				9BE204F522F5493B00E6C1D6 /* UsersCategoryCollectionViewCell.swift in Sources */,
+				9BD4F2E822F391250078B43B /* Encuesta.xcdatamodeld in Sources */,
+				9BE204EC22F4E95F00E6C1D6 /* HeaderTableViewCell.swift in Sources */,
+				9BDFF1A822F6AF5A00F6F962 /* EncuestaModel.swift in Sources */,
+				9BEA7F7022F4ADE5001338AD /* LogoutViewController.swift in Sources */,
+				9B4A900B22F94C9200B05E9E /* BaseViewController.swift in Sources */,
+				9B0D84E022F8D16300E17333 /* ButtonTableViewCell.swift in Sources */,
+				9BE7FE7122F463190014C3E0 /* UserSQLUseCase.swift in Sources */,
+				9BDFF1B022F6BD8100F6F962 /* HeaderModel.swift in Sources */,
+				9B0D84E422F8D5EE00E17333 /* DataTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BD4F2E322F391250078B43B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD4F2E422F391250078B43B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BD4F2EB22F3912B0078B43B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD4F2EC22F3912B0078B43B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BD4F2EF22F3912B0078B43B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BD4F2F022F3912B0078B43B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BD4F2F222F3912B0078B43B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6B9EA552558101C850B5F4 /* Pods-Encuesta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6393X4UX;
+				INFOPLIST_FILE = Encuesta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stb.paolo.Encuesta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BD4F2F322F3912B0078B43B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6B4710975D9CF6D0D30C2C /* Pods-Encuesta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL6393X4UX;
+				INFOPLIST_FILE = Encuesta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stb.paolo.Encuesta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BD4F2D722F391240078B43B /* Build configuration list for PBXProject "Encuesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD4F2EF22F3912B0078B43B /* Debug */,
+				9BD4F2F022F3912B0078B43B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD4F2F122F3912B0078B43B /* Build configuration list for PBXNativeTarget "Encuesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD4F2F222F3912B0078B43B /* Debug */,
+				9BD4F2F322F3912B0078B43B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BD4F2E622F391250078B43B /* Encuesta.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BD4F2E722F391250078B43B /* Encuesta.xcdatamodel */,
+			);
+			currentVersion = 9BD4F2E722F391250078B43B /* Encuesta.xcdatamodel */;
+			path = Encuesta.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9BD4F2D422F391240078B43B /* Project object */;
+}
